@@ -72,8 +72,7 @@ server
     server_name dev.vagrant.com;
     location "/"
     {
-        index index.php index.html index.htm;
-        try_files $uri $uri/ =404;
+        try_files $uri $uri/ /index.php?$args;
     }
     location ~ \.php$
     {
