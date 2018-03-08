@@ -19,7 +19,7 @@ sudo debconf-set-selections <<< 'mysql-server-5.7 mysql-server/root_password_aga
 sudo apt-get -y install mysql-server-5.7
 
 # Install PHP
-sudo apt-get -y install php7.2 php7.2-cgi php7.2-fpm php7.2-curl php7.2-mbstring php7.2-pgsql
+sudo apt-get -y install php7.2 php7.2-cgi php7.2-fpm php7.2-curl php7.2-mbstring php7.2-mysql
 
 # Stop servers
 sudo service nginx stop
